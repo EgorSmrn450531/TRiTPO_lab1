@@ -70,6 +70,25 @@ public class Complex {
         im += b.im;
         return this;
     }
+	//**********************************************
+	public Complex minus1(Complex b)
+	{
+		re-=b.re;
+		im-=b.im;
+		return.this;
+		
+	}
+	public Complex devide1(Complexb)
+	{
+		Complex a;
+		double real=(a.re*b.re+a.im*b.im)/(b.re*b.re+b.im*b.im);
+		double imag=(b.re*a.im-a.re*b.im)/(b.re*b.re+b.im*b.im);
+		a.re=real;
+		a.im-imag;
+		return a;
+		
+	}
+	//**********************************************
 
     /**
      * Multiply operation.
