@@ -77,9 +77,14 @@ public class Complex {
      * @return this Complex object whose value is this * b
      */
     public Complex times(Complex b) {
-        Complex a = this;
+        /*
+		Complex a = this;
         double real = a.re * b.re - a.im * b.im;
         double imag = a.re * b.im + a.im * b.re;
+		*/
+		double real=this.re*this.re-this.im*this.im;
+		double imag = this.re*this.im+this.im*this.re;
+		
         re = real;
         im = imag;
         return this;
