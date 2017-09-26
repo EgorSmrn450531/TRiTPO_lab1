@@ -80,11 +80,22 @@ public class Complex {
 	}
 	public Complex devide1(Complexb)
 	{
+		if(b.re==0 && b.im)
+		{
+			throw new ArithmeticException("Error! Delenie na 0");
+		}
+		if((b.re*b.re+b.im*b.im)!=0)
+		{
 		Complex a;
 		double real=(a.re*b.re+a.im*b.im)/(b.re*b.re+b.im*b.im);
 		double imag=(b.re*a.im-a.re*b.im)/(b.re*b.re+b.im*b.im);
 		a.re=real;
-		a.im-imag;
+		a.im=imag;
+		}
+		else
+		{
+			throw new ArithmeticException("Error! Delenie na 0");
+		}
 		return a;
 		
 	}
